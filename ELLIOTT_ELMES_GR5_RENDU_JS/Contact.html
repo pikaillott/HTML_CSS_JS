@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="menu-container">
+        <!-- Icône du menu burger -->
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    
+        <!-- Liste des liens de navigation -->
+        <ul class="nav-menu">
+            <li><a href="Page1.html">Home</a></li>
+            <li><a href="#">#Recipes#</a></li>
+            <li><a href="#">#Archive#</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Login.html">Login/Register</a></li>
+            <button class="button">Darkmode</button>
+        </ul>
+    </div>
+
+    <!--J'ai édité beaucoup ici mais j'ai oublié de garder, dcoup j'ai l'ancien en dessous, et ce que j'ai maintenant ici-->
+    <div>
+        <fieldset>
+            <textarea name="query" id="query" cols="80" rows="20" placeholder="votre message"></textarea>
+            <button class="button2">Envoyer</button>
+        </fieldset>
+        <div id="msgsent" class="msgsent"></div>
+        <div id="msgsenterror" class="msgsenterror"></div>
+    </div>
+
+<!--
+    <input type="text" name="query" placeholder="votre message" id="query">
+-->
+
+<!--
+    <div>
+        <fieldset>
+            <textarea name="query" id="query" cols="80" rows="20"></textarea>
+            <button class="button2">Envoyer</button>
+        </fieldset>
+        <p id="msgsent" class="msgsent"></p>
+        <p id="msgsenterror" class="msgsenterror"></p>
+    </div>
+-->
+
+    <script src="js/Contact.js"></script>
+
+</body>
+</html>

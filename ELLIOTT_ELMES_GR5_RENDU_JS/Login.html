@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="menu-container">
+        <!-- Icône du menu burger -->
+        <div class="burger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    
+        <!-- Liste des liens de navigation -->
+        <ul class="nav-menu">
+            <li><a href="Page1.html">Home</a></li>
+            <li><a href="#">#Recipes#</a></li>
+            <li><a href="#">#Archive#</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Login.html">Login/Register</a></li>
+            <button class="button">Darkmode</button>
+        </ul>
+    </div>
+
+    <form id="monFormulaire" action="" method="">
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <!-- Champ de texte simple -->
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+    
+            <!-- Champ de texte pour l'e-mail -->
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+    
+            <!-- Champ de texte pour le mot de passe -->
+            <label for="motDePasse">Mot de passe :</label>
+            <input type="password" id="motDePasse" name="motDePasse" required>
+            <!-- Affiche un message d'erreur pour le mot de passe -->
+            <p id="motDePasseError" class="error"></p>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Autres informations</legend>
+    
+            <!-- Case à cocher -->
+            <input type="checkbox" id="abonnement" name="abonnement" value="s'abonner">
+            <label for="abonnement">S'abonner à la newsletter</label>
+    
+            <!-- Boutons radio -->
+            <p>Genre :</p>
+            <input type="radio" id="homme" name="genre" value="homme">
+            <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="genre" value="femme">
+            <label for="femme">Femme</label>
+            <!-- Affiche un message d'erreur pour le genre -->
+            <p id="genreError" class="error"></p>
+    
+            <!-- Menu déroulant (select) -->
+            <label for="pays">Pays :</label>
+            <select id="pays" name="pays">
+                <option value="france">France</option>
+                <option value="espagne">France</option>
+                <option value="italie">France</option>
+                <option value="italie">Belgique</option>
+                <option value="italie">France</option>
+                <option value="italie">France</option>
+                <option value="italie">France</option>
+                <option value="italie">France</option>
+                <!-- Ajoutez d'autres options selon vos besoins -->
+            </select>
+        </fieldset>
+
+            <!-- Input de type submit pour le bouton de soumission -->
+    <input type="button" value="Envoyer" id="bt">
+
+        <script src="js/Login.js"></script>
+    
+</body>
+</html>
